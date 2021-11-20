@@ -34,7 +34,7 @@ const addToCart = (cartItem) => {
 	}
 
 	localStorage.setItem("cart", JSON.stringify(cartArray));
-	alert ('Добавлено в корзину');
+
 };
 
 const renderItems = (data) => {
@@ -71,6 +71,7 @@ const renderItems = (data) => {
 		// card.querySelector(".button-card-text");
 		card.querySelector(".button-card-text").addEventListener("click", () => {
 			addToCart({ name, price, id, count: 1 });
+			alert ('Добавлено в корзину');
 		});
 
 		cardsMenu.append(card);
