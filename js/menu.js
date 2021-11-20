@@ -34,6 +34,7 @@ const addToCart = (cartItem) => {
 	}
 
 	localStorage.setItem("cart", JSON.stringify(cartArray));
+	alert ('Добавлено в корзину');
 };
 
 const renderItems = (data) => {
